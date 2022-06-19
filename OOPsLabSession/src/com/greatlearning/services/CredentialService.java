@@ -27,7 +27,7 @@ public class CredentialService {
 	}
 
 	public String generateEmailAddress(String firstName, String lastName, String department) {
-		return firstName.toLowerCase() +lastName + "@" + department + ".abc.com";
+		return firstName.toLowerCase() +lastName + "@" + department + ".greatling.com";
 	}
 
 	public void showCredentials (Employee employee, String email, char[] generatedPassword) {

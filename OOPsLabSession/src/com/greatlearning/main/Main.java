@@ -10,7 +10,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		Employee emp1 = new Employee("Aditya", "muthusamy");
+		Employee emp1 = new Employee("Aditya", "MS");
 		CredentialService cs = new CredentialService();
 
 		System.out.println("Please enter the department from the following ");
@@ -23,25 +23,25 @@ public class Main {
 		if (option > 0) {
 			switch (option) {
 			case 1: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "tech");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "tech");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 2: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "admin");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "admin");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 3: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "hr");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "hr");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 4: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "legal");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "legal");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
