@@ -35,13 +35,13 @@ public class Main {
 			}
 				break;
 			case 3: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "Human Resource");
+				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "hr");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 4: {
-				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "Legal");
+				String email = cs.generateEmailAddress(emp1.getFirstName(), emp1.getLastName(), "legal");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
