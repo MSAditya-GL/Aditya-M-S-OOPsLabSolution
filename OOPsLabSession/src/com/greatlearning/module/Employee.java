@@ -19,8 +19,8 @@ public class Employee {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	public Employee (String firstName, String lastName) {
+
+	public Employee(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}

@@ -23,25 +23,29 @@ public class Main {
 		if (option > 0) {
 			switch (option) {
 			case 1: {
-				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "tech");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(),
+						emp1.getLastName().toLowerCase(), "tech");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 2: {
-				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "admin");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(),
+						emp1.getLastName().toLowerCase(), "admin");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 3: {
-				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "hr");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(),
+						emp1.getLastName().toLowerCase(), "hr");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
 				break;
 			case 4: {
-				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(), emp1.getLastName().toLowerCase(), "legal");
+				String email = cs.generateEmailAddress(emp1.getFirstName().toLowerCase(),
+						emp1.getLastName().toLowerCase(), "legal");
 				char[] generatedPassword = cs.generatePassword();
 				cs.showCredentials(emp1, email, generatedPassword);
 			}
